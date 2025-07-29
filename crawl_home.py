@@ -1,3 +1,4 @@
+# coding: utf-8
 import configparser
 import os
 import re
@@ -157,7 +158,7 @@ class DouYinCrawler:
         os.chdir('..')
 
 
-if __name__ == '__main__':
+def main():
     crawler = DouYinCrawler()
     while True:
         user_input = input("请在此填入用户链接（输入exit退出）: \n")
@@ -166,3 +167,6 @@ if __name__ == '__main__':
         crawler.crawl_media(user_input)
 
     logger.info("程序已退出")
+
+if __name__ == "__main__":
+    main()

@@ -1,35 +1,19 @@
 # douyin_crawl
 
 ### 简介
-```text
 一个简洁的抖音作品批量下载命令行工具
-```
-### 开发环境
-```text
-windows10
-pycharm
-```
-
-### 编译运行环境
-```text
-Python 3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:52:53) [MSC v.1927 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license" for more information.
-```
 
 ### 使用说明
+nodejs >= 16
+python >= 3.8.6
+git
 
-```text
-需要安装Node.js环境(https://nodejs.org/)
-需要安装以下Python库
-
-pip install PyExecJS (Python调用JavaScript)
-pip install requests  (同步http客户端)
-pip install tqdm (进度条工具)
-pip install loguru (Python日志工具)
-
-
-crawl_home.py是爬取主程序
-python crawl_home.py 
+```bash
+git clone https://github.com/catnoteafish/douyin_crawl.git --depth 1
+sudo apt install pipx # or pip3 install pipx
+pipx install pdm
+pdm install
+pdm run python3 crawl_home.py
 ```
 
 ```text
@@ -51,5 +35,5 @@ https://www.douyin.com/user/MS4wLjABAAAAK8yyhMzdNAtyWqupVvVBXB_4bmr6DMAZ0zpGn91q
 * 运行截图
 ![img.png](运行截图/img.png)
 
-
-其他疑问请加qq1406823510
+许可 
+根据GPL-v3授予许可
